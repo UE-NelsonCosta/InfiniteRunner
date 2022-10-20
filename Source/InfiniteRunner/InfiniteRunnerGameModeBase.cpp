@@ -24,7 +24,7 @@ void AInfiniteRunnerGameModeBase::Tick(float DeltaTime)
 
 	if(!IsThereACharacterAlive())
 	{
-		UGameplayStatics::OpenLevel("Game");
+		UGameplayStatics::OpenLevel(GetWorld() , "Game");
 	}
 }
 
