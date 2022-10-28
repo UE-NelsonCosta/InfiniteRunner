@@ -13,13 +13,16 @@ UCLASS()
 class INFINITERUNNER_API AInfiniteRunnerGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-
+public:
 	AInfiniteRunnerGameModeBase();
 
+	UFUNCTION(BlueprintImplementableEvent)
+	bool IsThereACharacterAlive();
+
+private:
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
 
-	bool IsThereACharacterAlive();
 
 	// Due To The Logic Killing The Actor Outright, We Can Just Check For This Variable
 	UPROPERTY()

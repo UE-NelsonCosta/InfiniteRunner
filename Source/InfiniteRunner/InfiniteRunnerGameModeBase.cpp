@@ -28,6 +28,7 @@ void AInfiniteRunnerGameModeBase::Tick(float DeltaTime)
 	}
 }
 
+/*
 bool AInfiniteRunnerGameModeBase::IsThereACharacterAlive()
 {
 	for(int i = 0; i < Characters.Num(); ++i)
@@ -38,3 +39,4 @@ bool AInfiniteRunnerGameModeBase::IsThereACharacterAlive()
 	
 	return false;
 }
+*/
